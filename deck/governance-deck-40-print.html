@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>The Governance Deck — 40 cards (print &amp; cut)</title><style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: 'Domine', Georgia, serif; background: #ececec; color: #14151a; }
+.no-print { font-family: Georgia, serif; max-width: 192mm; margin: 10mm auto 6mm; padding: 5mm 7mm;
+  background: #14151a; color: #fff; border-radius: 3mm; font-size: 9pt; line-height: 1.5; }
+.no-print strong { color: #E8B54D; }
+.no-print button { margin-top: 2.5mm; padding: 2mm 5mm; border: 0; border-radius: 2mm; background: #E8B54D;
+  color: #14151a; font: 700 9.5pt/1 Georgia, serif; cursor: pointer; }
+@page { size: A4; margin: 9mm; }
+.sheet { width: 192mm; margin: 8mm auto; padding: 0; display: grid;
+  grid-template-columns: repeat(2, 1fr); grid-auto-rows: 67mm; gap: 3mm;
+  background: #fff; box-shadow: 0 1mm 4mm rgba(20,20,30,.18); }
+@media print { body { background: #fff; } .sheet { margin: 0; box-shadow: none; } .no-print { display: none; } }
+.card { border: 0.4mm dashed #b0b0b0; border-radius: 3mm; padding: 3.5mm 4mm; overflow: hidden;
+  display: flex; flex-direction: column; break-inside: avoid; page-break-inside: avoid; }
+.card.line     { --c: #8A6A1F; }
+.card.oversight{ --c: #232867; }
+.card.data     { --c: #1F8A70; }
+.card.vendors  { --c: #4E5D6B; }
+.card.learning { --c: #C4503A; }
+.top { display: flex; align-items: center; justify-content: space-between; }
+.chip { display: inline-block; padding: 1mm 2.8mm; border-radius: 5mm; background: var(--c); color: #fff;
+  font-family: Georgia, serif; font-size: 6.4pt; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.num { font-family: Georgia, serif; font-size: 7pt; font-weight: 600; color: #9a9aa0; letter-spacing: .06em; }
+.title { font-size: 11.5pt; font-weight: 700; line-height: 1.16; margin: 2mm 0 0; color: #14151a; }
+.lbl { font-family: Georgia, serif; font-size: 6.2pt; font-weight: 700; letter-spacing: .1em;
+  color: var(--c); margin: 1.6mm 0 .6mm; text-transform: uppercase; }
+p.a, p.b { font-size: 7.8pt; line-height: 1.32; color: #33353c; }
+.line { margin-top: auto; padding-top: 1.6mm; border-top: 0.3mm solid rgba(20,21,26,.14);
+  font-size: 8.2pt; font-style: italic; font-weight: 600; line-height: 1.25; color: var(--c); }
+.card.cover { border-style: solid; background: #14151a; border-color: #14151a; color: #ECE7DB; }
+.cover .kicker { font-size: 6.6pt; font-weight: 700; letter-spacing: .2em; color: #E8B54D; text-transform: uppercase; margin-top: 2mm; }
+.cover h1 { font-size: 18pt; font-weight: 700; line-height: 1.1; margin: 2.5mm 0 0; color: #fff; }
+.cover .sub { font-size: 8.4pt; margin-top: 1.6mm; color: #c9c9cf; line-height: 1.35; }
+.cover .cats { margin-top: 3mm; font-size: 7pt; line-height: 1.75; color: #c9c9cf; }
+.dot { display: inline-block; width: 2.6mm; height: 2.6mm; border-radius: 50%; margin-right: 2.2mm; }
+.cover .tag { margin-top: auto; padding-top: 2.5mm; font-size: 8pt; font-style: italic; font-weight: 600; color: #E8B54D; }
+</style></head>
+<body>
+<div class="no-print">
+<strong>Print setup:</strong> A4 &middot; scale <strong>100% / Actual size</strong> &middot; background graphics: on.
+Then cut along the dashed lines. 8 cards per page, 6 pages — the first card is the deck cover.
+Free to print and share; not for resale. This is not a sales document.
+<button onclick="window.print()">Print</button>
+</div>
+<div class="sheet"><div class="card cover">
+<div class="kicker">A DECK OF NAMED OWNERS</div>
+<h1>The Governance Deck</h1>
+<div class="sub">40 cards for executives and boards approving and overseeing AI. Owner, evidence, review date — or it is decoration.</div>
+<div class="cats">
+<span class="dot" style="background:#8A6A1F"></span>The Line — accountability and the gate<br>
+<span class="dot" style="background:#232867"></span>Oversight — human authority and its evidence<br>
+<span class="dot" style="background:#1F8A70"></span>Data — classification, sovereignty, the paste<br>
+<span class="dot" style="background:#4E5D6B"></span>Vendors — diligence before and after the signature<br>
+<span class="dot" style="background:#C4503A"></span>Learning — registers, reviews, the loop
+</div>
+<div class="tag">The tools change. Accountability does not.</div>
+</div>
+<div class="card line">
+<div class="top"><span class="chip">THE LINE</span><span class="num">01 / 40</span></div>
+<h2 class="title">The accountability principle</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Accountability gets treated as a vibe (“the AI did it”) or a committee. Neither can sign.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">For every AI-assisted decision: one named human who owns the evidence and the consequence. Auditability is part of the decision, not the audit team&#x27;s afterthought.</p>
+<p class="line">AI can accelerate situational awareness. It can never hold accountability.</p>
+</div>
+<div class="card line">
+<div class="top"><span class="chip">THE LINE</span><span class="num">02 / 40</span></div>
+<h2 class="title">The four questions</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Tool approvals drift into feature comparisons, and the due diligence never happens.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Of every tool: what does it actually do? What does it see? Who checks it? What happens when it is wrong?</p>
+<p class="line">If a tool can&#x27;t answer the four, it isn&#x27;t approved — it&#x27;s tolerated.</p>
+</div>
+<div class="card line">
+<div class="top"><span class="chip">THE LINE</span><span class="num">03 / 40</span></div>
+<h2 class="title">What cannot be automated</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Capability demos make every decision look automatable.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Name the decisions that are unbounded — the context arrives in real time, the right call may go against the data, the variables cannot all be listed — and who owns each one.</p>
+<p class="line">The list of what AI may not decide is the first governance document.</p>
+</div>
+<div class="card line">
+<div class="top"><span class="chip">THE LINE</span><span class="num">04 / 40</span></div>
+<h2 class="title">Owner, evidence, review date</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Frameworks get admired during the offsite and forgotten after it.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Run every governance artefact through the test: does it produce a named owner, a piece of evidence and a review date? If not, cut it.</p>
+<p class="line">No owner, no evidence, no review date — it is decoration.</p>
+</div>
+<div class="card line">
+<div class="top"><span class="chip">THE LINE</span><span class="num">05 / 40</span></div>
+<h2 class="title">The use-case gate</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Use cases start as pilots and become infrastructure without passing any gate.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">The one-page approval: use case and owner · does / does not do · data class and approved tool · tier and its evidence · named decision maker and escalation · failure response · residual risk and who accepts it · pilot boundary · TEVV and swap path · review date.</p>
+<p class="line">A blank field is a no.</p>
+</div>
+<div class="card line">
+<div class="top"><span class="chip">THE LINE</span><span class="num">06 / 40</span></div>
+<h2 class="title">Disclosure and records</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">AI&#x27;s contribution to client work gets disclosed inconsistently, after the fact.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Where AI materially contributes to a deliverable, disclose and record: use case, what AI shaped, who verified against what, assumptions and limitations, the wording used, and where it appears. Draft the disclosure and the record together.</p>
+<p class="line">Disclose and record at the same time, or neither happens.</p>
+</div>
+<div class="card line">
+<div class="top"><span class="chip">THE LINE</span><span class="num">07 / 40</span></div>
+<h2 class="title">Start at Tier 3</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Teams under-rate consequence and negotiate oversight downward to move fast.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Anything consequential starts at Tier 3 — decision support. Move down only with evidence. Move up whenever uncertain.</p>
+<p class="line">Down is earned. Up is default.</p>
+</div></div><div class="sheet"><div class="card line">
+<div class="top"><span class="chip">THE LINE</span><span class="num">08 / 40</span></div>
+<h2 class="title">The escalation test</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Consequence, reversibility and time pressure each get argued away one at a time.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Any one high — safety, client, clearance, licence to operate; irreversible; clock forcing a decision before the evidence arrives — escalates the tier. Default up when uncertain.</p>
+<p class="line">One high is enough.</p>
+</div>
+<div class="card oversight">
+<div class="top"><span class="chip">OVERSIGHT</span><span class="num">09 / 40</span></div>
+<h2 class="title">The four tiers</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">“Human in the loop” is used for everything from full autonomy to a signature, so nobody knows what oversight is actually required.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Tier 1: autonomous, tightly bounded, kill switch. Tier 2: human on the loop with veto authority inside a window. Tier 3: human in the loop — a named decider who sees the primary evidence. Tier 4: human in command — no AI origination, human signs.</p>
+<p class="line">Name the tier, or “human oversight” means nothing.</p>
+</div>
+<div class="card oversight">
+<div class="top"><span class="chip">OVERSIGHT</span><span class="num">10 / 40</span></div>
+<h2 class="title">Tier 1 is bounded automation</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Teams hear “autonomous tier” and imagine scope.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Tier 1 is the exception: low consequence, reversible, measurable — or a pre-approved safety interlock with fixed parameters, approved owner and kill switch. Consequential and autonomous with no interlock paperwork? It isn&#x27;t Tier 1.</p>
+<p class="line">Tier 1 is an exception with paperwork, not a licence.</p>
+</div>
+<div class="card oversight">
+<div class="top"><span class="chip">OVERSIGHT</span><span class="num">11 / 40</span></div>
+<h2 class="title">What happens on silence</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Tier 2 fails at the veto window: nobody monitors the monitor, and silence becomes consent.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Define the default on silence — act or hold — who watches the window, and the override rate you expect. Report the override rate.</p>
+<p class="line">Silence is a decision. Design its default.</p>
+</div>
+<div class="card oversight">
+<div class="top"><span class="chip">OVERSIGHT</span><span class="num">12 / 40</span></div>
+<h2 class="title">Evidence by tier</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Tiers get claimed; evidence doesn&#x27;t get produced.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Tier 1: boundary, error rate, kill switch, logging. Tier 2: override rate, seeded-error tests, reviewer rotation. Tier 3: primary evidence, explicit sign-off, provenance. Tier 4: named decision maker, two-person rule, tamper-evident log.</p>
+<p class="line">If you cannot produce the evidence, you cannot claim the tier.</p>
+</div>
+<div class="card oversight">
+<div class="top"><span class="chip">OVERSIGHT</span><span class="num">13 / 40</span></div>
+<h2 class="title">The human is not a control</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">A human in the loop defeats itself: automation bias, cognitive offloading, anchoring, skill erosion.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Show primary evidence and require a reason to accept. Rotate reviewers and sample unaided judgement. Delay the AI estimate until the human frames the problem. Seed errors and rehearse the manual check.</p>
+<p class="line">The loop is only a control if the human can still say no.</p>
+</div>
+<div class="card oversight">
+<div class="top"><span class="chip">OVERSIGHT</span><span class="num">14 / 40</span></div>
+<h2 class="title">The red line inventory</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Red lines live in people&#x27;s heads as instincts, and the first failure is the first written line.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Write the permanent Tier 4 decisions — life-safety direction, client warnings, statutory conclusions, client commitments, classification decisions, employment decisions, autonomous enforcement. Each gets a boundary, an owner, a verification rule, a record and an annual review date. Publish internally.</p>
+<p class="line">Would you defend this line to a client, a regulator and your own staff?</p>
+</div>
+<div class="card oversight">
+<div class="top"><span class="chip">OVERSIGHT</span><span class="num">15 / 40</span></div>
+<h2 class="title">Decision rights</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">“The committee will look at it” becomes the answer to everything, and nothing has a decider.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">One matrix, one accountable name per row: approve a system, approve a use case, approve client data use, change a tier, respond to an incident, grant an exception, change a classification. Committees consult; someone decides.</p>
+<p class="line">One name per row.</p>
+</div></div><div class="sheet"><div class="card oversight">
+<div class="top"><span class="chip">OVERSIGHT</span><span class="num">16 / 40</span></div>
+<h2 class="title">Exceptions are decisions too</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Exceptions get granted verbally in corridors and become policy by precedent.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Every exception records who granted it, what it covers, when it expires, and where it lives. The authority to grant sits with a named role, not a mood.</p>
+<p class="line">An exception with no expiry is a new policy.</p>
+</div>
+<div class="card oversight">
+<div class="top"><span class="chip">OVERSIGHT</span><span class="num">17 / 40</span></div>
+<h2 class="title">The new-tool gate</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Staff adopt tools faster than committees meet, so the real policy becomes whatever got there first.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">A short gate, not a long ban: the four questions, permitted data class, tier, owner, review date. Make the safe path the fast path, and keep the approved list short.</p>
+<p class="line">If the safe path is slow, the unsafe path is the policy.</p>
+</div>
+<div class="card oversight">
+<div class="top"><span class="chip">OVERSIGHT</span><span class="num">18 / 40</span></div>
+<h2 class="title">The two-person rule</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Single-signature decisions look efficient until the one signature is wrong, rushed or social-engineered.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">For the stakes that demand it — per the red lines — two named people verify independently before the decision takes effect, recorded in a tamper-evident log.</p>
+<p class="line">Some doors open only with two keys.</p>
+</div>
+<div class="card data">
+<div class="top"><span class="chip">DATA</span><span class="num">19 / 40</span></div>
+<h2 class="title">The four classes</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">“Sensitive” is a mood, not a classification, so every tool decision starts from scratch.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Very High: accredited or sovereign environment only — or no AI. High: approved enterprise tenant, client permission where required, redact, human review. Medium: approved enterprise AI, no training on your data. Low: any approved tool — and verify anyway.</p>
+<p class="line">Name the class before the tool.</p>
+</div>
+<div class="card data">
+<div class="top"><span class="chip">DATA</span><span class="num">20 / 40</span></div>
+<h2 class="title">The default rule</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Unclassifiable documents get pasted because a deadline is pressing.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Cannot classify, cannot paste. Mixed documents take the highest class present. Unclear documents take the highest plausible class, not the lowest.</p>
+<p class="line">If you cannot classify it, you cannot paste it.</p>
+</div>
+<div class="card data">
+<div class="top"><span class="chip">DATA</span><span class="num">21 / 40</span></div>
+<h2 class="title">The paste test</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Pasting is instant, and the questions it should trigger are not.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Five, before the paste: class and handling marker · where it runs — country, provider, tenant, sub-processor · who can see it · kept or used — retention, training, deletion · what is in the metadata.</p>
+<p class="line">The paste is instant. The questions are quick too.</p>
+</div>
+<div class="card data">
+<div class="top"><span class="chip">DATA</span><span class="num">22 / 40</span></div>
+<h2 class="title">The sovereignty rule</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Residency and sovereignty get conflated, and data ends up within reach of process you did not expect.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Know where it sits and who can compel access. Sovereignty first, Five Eyes minimum, never opposing jurisdictions. Where the class permits, prefer your own tenant.</p>
+<p class="line">Residency is where it sits. Sovereignty is who can compel it.</p>
+</div>
+<div class="card data">
+<div class="top"><span class="chip">DATA</span><span class="num">23 / 40</span></div>
+<h2 class="title">Three scales</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">“Very High” gets said without naming the scale, and the decision inherits the wrong one.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Keep them separate: data class — what may go where; use-case risk rating — your approval pathway; oversight tier — human authority and evidence.</p>
+<p class="line">Do not say “Very High” without naming the scale.</p>
+</div></div><div class="sheet"><div class="card data">
+<div class="top"><span class="chip">DATA</span><span class="num">24 / 40</span></div>
+<h2 class="title">The metadata in the file</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">The document looks clean. The tracked changes, author fields, comments and headers are not.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Strip or check metadata before any document is pasted, attached to a prompt, or uploaded.</p>
+<p class="line">The file carries more than its words.</p>
+</div>
+<div class="card data">
+<div class="top"><span class="chip">DATA</span><span class="num">25 / 40</span></div>
+<h2 class="title">The secure sandbox</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Bans push use onto personal accounts, where none of the controls exist.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Enterprise tenant — SSO, no training on your data, logging, retention settings. Data controls — DLP for identifiers, egress monitoring, personal accounts blocked on managed devices. Human controls — a short approved-tool list, a named place to ask, a safe alternative for every legitimate need.</p>
+<p class="line">A ban is not a control. It is a hope.</p>
+</div>
+<div class="card data">
+<div class="top"><span class="chip">DATA</span><span class="num">26 / 40</span></div>
+<h2 class="title">Shadow use is a measurement</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">The gap between the register and reality gets assumed to be zero.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Ask, survey, check the logs — measure shadow use, then onboard every legitimate need onto the safe path.</p>
+<p class="line">Measure the gap. Do not assume it away.</p>
+</div>
+<div class="card vendors">
+<div class="top"><span class="chip">VENDORS</span><span class="num">27 / 40</span></div>
+<h2 class="title">Ten questions before the demo</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Demos get scheduled before diligence, and the contract inherits whatever wasn&#x27;t asked.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Training data and opt-out · retention, location, proof of deletion · sub-processors and jurisdictions · human review of your prompts · independent field validation · incident detection and notification · model change and deprecation process · audit, access and swap rights · exit, export, deletion.</p>
+<p class="line">If the answers are vague, the risk is not vague. It is yours.</p>
+</div>
+<div class="card vendors">
+<div class="top"><span class="chip">VENDORS</span><span class="num">28 / 40</span></div>
+<h2 class="title">TEVV</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Vendor accuracy claims are marketing wearing a lab coat.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Demand independent test, evaluation, verification and validation against field ground truth — your conditions, your data shapes, your error costs.</p>
+<p class="line">Ask for evidence, not a certification badge.</p>
+</div>
+<div class="card vendors">
+<div class="top"><span class="chip">VENDORS</span><span class="num">29 / 40</span></div>
+<h2 class="title">The model swap</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">The vendor quietly upgrades the model, and the workflow you validated is now running on something else.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Contract for it: what changes, what notice, what re-validation — and a swap path that does not change your operating model. Register model versions as they change.</p>
+<p class="line">If the swap changes your workflow, the vendor owns your operating model.</p>
+</div>
+<div class="card vendors">
+<div class="top"><span class="chip">VENDORS</span><span class="num">30 / 40</span></div>
+<h2 class="title">Exit</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Exit gets negotiated when entering is fun and forgotten when leaving is hard.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Before signature: how you export, in what format, proof of deletion, and what keeps running without them.</p>
+<p class="line">Sign the exit with the entry.</p>
+</div>
+<div class="card vendors">
+<div class="top"><span class="chip">VENDORS</span><span class="num">31 / 40</span></div>
+<h2 class="title">Retention and deletion</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">“Your data is deleted” and “your data trains our model” are both said by sales, and neither is contractual.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Retention periods, deletion proof, and training opt-out enforcement — in the contract, inherited by every sub-processor.</p>
+<p class="line">Deletion you cannot prove is a story.</p>
+</div></div><div class="sheet"><div class="card vendors">
+<div class="top"><span class="chip">VENDORS</span><span class="num">32 / 40</span></div>
+<h2 class="title">Where it runs</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">The tenant answer changes the data answer, and nobody re-asks after procurement.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Country, provider, tenant, sub-processors — recorded in the registry at approval and re-checked at every renewal.</p>
+<p class="line">Every tool is a place. Record the place.</p>
+</div>
+<div class="card vendors">
+<div class="top"><span class="chip">VENDORS</span><span class="num">33 / 40</span></div>
+<h2 class="title">Incidents</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Nobody learns the vendor&#x27;s incident process until the firm is the one notifying.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">How incidents are detected, notified and remediated; what triggers your own duty executive; which client commitments this touches. In writing, before you need it.</p>
+<p class="line">Learn their incident process before you learn it from an incident.</p>
+</div>
+<div class="card vendors">
+<div class="top"><span class="chip">VENDORS</span><span class="num">34 / 40</span></div>
+<h2 class="title">The registry</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Approved systems live in a spreadsheet three people can find, and reality has more tools than the register.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Every tool: ID and name, one owner, status, tier, data class, vendor and hosting, model version, last review. Aligned to the approved-systems register.</p>
+<p class="line">The registry is the difference between governing and guessing.</p>
+</div>
+<div class="card learning">
+<div class="top"><span class="chip">LEARNING</span><span class="num">35 / 40</span></div>
+<h2 class="title">The risk register belongs to AI too</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">AI risk gets a separate register nobody maintains, or hides inside IT risk nobody reads.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Add AI risks to the register you already run. Minimum columns: ID, use case, one owner, tier and evidence standard, data class, failure modes — invented detail, egress, automation bias, drift, vendor overclaim — controls, residual rating, review date, status.</p>
+<p class="line">Add AI to the register you already run.</p>
+</div>
+<div class="card learning">
+<div class="top"><span class="chip">LEARNING</span><span class="num">36 / 40</span></div>
+<h2 class="title">The brief-back</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Go-lives proceed on enthusiasm and slideware, and the executive never hears the gaps.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Before go-live, the owner briefs back: what it does and does not do, the data it sees at what class, the tier and who decides, what happens when it is wrong, how it is recorded, when it is reviewed.</p>
+<p class="line">Listen for gaps, not polish.</p>
+</div>
+<div class="card learning">
+<div class="top"><span class="chip">LEARNING</span><span class="num">37 / 40</span></div>
+<h2 class="title">The after-action review</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Reviews happen only after incidents — on the loudest one, with blame attached.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Blameless, five questions, monthly: what was supposed to happen; what actually happened; why the difference; what works that we keep; what changes, owned by whom, by when. Near misses first.</p>
+<p class="line">Near misses are the cheapest evidence you will get.</p>
+</div>
+<div class="card learning">
+<div class="top"><span class="chip">LEARNING</span><span class="num">38 / 40</span></div>
+<h2 class="title">Sampling and drift</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">The system that was validated at go-live is quietly different by quarter&#x27;s end.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Sample decisions against ground truth. Track override and error rates. Review drift on the schedule the registry promises.</p>
+<p class="line">Trust decays on a schedule. Sample against it.</p>
+</div>
+<div class="card learning">
+<div class="top"><span class="chip">LEARNING</span><span class="num">39 / 40</span></div>
+<h2 class="title">The 90-day gates</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Operationalisation plans run to the horizon and slip forever.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Day 30: register baseline, class-to-tool rules, safe path live. Day 60: evidence of use and oversight in the priority workflows. Day 90: review, corrective action, next-quarter priorities.</p>
+<p class="line">Gates at 30, 60, 90 — or the plan is a poster.</p>
+</div></div><div class="sheet"><div class="card learning">
+<div class="top"><span class="chip">LEARNING</span><span class="num">40 / 40</span></div>
+<h2 class="title">Review dates are controls</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Everything in governance carries a review date, and every review date is honoured in the breach.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Every artefact — tier, red line, exception, approval, registry row — carries a review date and an owner for the review. Missed reviews surface at the quarterly executive review, by name.</p>
+<p class="line">The review date is the smallest control in governance. Miss it, and the rest decays.</p>
+</div></div>
+</body></html>

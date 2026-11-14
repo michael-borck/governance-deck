@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Governance Deck — 40 cards for approving and overseeing AI</title>
+<meta name="description" content="A free deck of 40 governance cards for executives and boards approving and overseeing AI. Owner, evidence, review date — or it is decoration.">
+<style>
+@font-face{font-family:'Domine';src:url('deck/fonts/Domine.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('deck/fonts/FunnelSans.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('deck/fonts/NanumGothicCoding-Regular.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('deck/fonts/NanumGothicCoding-Bold.ttf');font-weight:700}
+:root{--night:#14151a;--ink:#16181D;--dim:#c9c9cf;--faint:#8A8E96;--gold:#E8B54D;--paper:#F4F2EC;
+--line:#8A6A1F;--ov:#232867;--da:#1F8A70;--ve:#4E5D6B;--le:#C4503A;
+--serif:'Domine',Georgia,serif;--sans:'Funnel Sans','Avenir Next',sans-serif;--mono:'Nanum Gothic Coding',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.55}
+h1,h2,h3{font-family:var(--serif);line-height:1.15}
+.kicker{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.kicker::before{content:"";display:inline-block;width:26px;height:2px;background:var(--gold);margin-right:10px;vertical-align:middle}
+.kicker.dark{color:var(--gold)}.kicker.dark::before{background:var(--gold)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+.hero{position:relative;background:var(--night);color:#ECE7DB;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:
+  repeating-linear-gradient(90deg,rgba(232,181,77,.03) 0 1px,transparent 1px 60px)}
+.hero .wrap{position:relative;z-index:1;padding:110px 24px 120px;max-width:1060px}
+.hero h1{font-size:clamp(30px,4.6vw,46px);margin:14px 0 0;color:#fff}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lede{margin:16px 0 0;max-width:560px;font-size:17px;color:#c9c9cf}
+.hero p.lede b{color:#ECE7DB}
+.btns{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:700;font-size:14px;text-decoration:none}
+.btn.gold{background:var(--gold);color:var(--night)}
+.btn.ghost{border:1px solid rgba(236,231,219,.4);color:#ECE7DB}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
+.note{margin-top:14px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--faint);text-transform:uppercase}
+section{padding:72px 0}
+section.alt{background:var(--paper)}
+.lead{font-family:var(--serif);font-size:clamp(20px,2.6vw,26px);margin:12px 0 0;max-width:680px}
+.lead em{font-style:normal;color:var(--gold)}
+.on-dark .lead{color:#ECE7DB}
+.cats{margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px}
+.cat{border-top:3px solid var(--c);padding-top:12px}
+.cat .n{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.14em;color:var(--c)}
+.cat h3{font-size:17px;margin:4px 0 4px}
+.cat p{font-size:13.5px;color:#4B5157}
+.line{--c:#B08544}.ov{--c:#4a4f9e}.da{--c:#1F8A70}.ve{--c:#4E5D6B}.le{--c:#C4503A}
+.pair{margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.step{background:#fff;border:1px solid #D8D4CA;border-radius:10px;padding:22px}
+.on-dark .step{background:#1d1f26;border-color:#2c2e38}
+.step .n{font-family:var(--serif);font-size:30px;color:var(--gold);font-weight:700}
+.step h3{font-size:16px;margin:6px 0 6px}
+.step p{font-size:13.5px;color:#4B5157}
+.on-dark .step h3{color:#ECE7DB}
+.on-dark .step p{color:#a9a9b4}
+.dl{margin-top:40px;border:1px solid #D8D4CA;border-radius:10px;overflow:hidden}
+.on-dark .dl{border-color:rgba(236,231,219,.18)}
+.dl a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 22px;text-decoration:none;color:var(--ink);border-bottom:1px solid #E4E1D8}
+.on-dark .dl a{color:#ECE7DB;border-bottom-color:rgba(236,231,219,.12)}
+.dl a:last-child{border-bottom:0}
+.dl a:hover{background:var(--paper)}
+.on-dark .dl a:hover{background:rgba(232,181,77,.08)}
+.dl .what{font-weight:700;font-size:15px}
+.dl .what span{display:block;font-weight:400;font-size:12.5px;color:#6B6F78;margin-top:2px}
+.on-dark .dl .what span{color:#a9a9b4}
+.dl .fmt{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--gold);text-transform:uppercase;white-space:nowrap}
+footer{background:var(--night);color:var(--faint);padding:34px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+footer .tag{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<div class="hero on-dark">
+  <div class="wrap">
+    <div class="kicker">A free deck of named owners</div>
+    <h1>Approving and overseeing AI.<br><em>Owner, evidence, review date.</em></h1>
+    <p class="lede">Forty cards in five sections: <b>the line</b>, <b>oversight</b>, <b>data</b>, <b>vendors</b> and <b>learning</b>. Every card produces a named owner, a piece of evidence and a review date — or it is decoration.</p>
+    <div class="btns">
+      <a class="btn gold" href="deck/governance-deck-40-print.html">Print the deck</a>
+      <a class="btn ghost" href="deck/governance-deck-guide.html">Start with the one-page guide</a>
+    </div>
+    <div class="note">No sign-up. No email. There is no certification at the end.</div>
+  </div>
+</div>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="kicker dark">What's in it</div>
+    <h2 class="lead">Five sections. <em>Each one ends in a name and a date.</em></h2>
+    <div class="cats">
+      <div class="line"><div class="n">THE LINE · 8</div><h3>Accountability &amp; the gate</h3><p>The principle, the four questions, what cannot be automated, the use-case gate, disclosure and records.</p></div>
+      <div class="ov"><div class="n">OVERSIGHT · 10</div><h3>Human authority</h3><p>The 4-tier spectrum, start at Tier 3, evidence by tier, the escalation test, red lines, decision rights.</p></div>
+      <div class="da"><div class="n">DATA · 8</div><h3>Classification &amp; sovereignty</h3><p>Four classes, the default rule, the paste test, sovereignty, three scales, the sandbox, shadow use.</p></div>
+      <div class="ve"><div class="n">VENDORS · 8</div><h3>Diligence</h3><p>Ten questions before the demo, TEVV, the model swap, exit, retention, where it runs, incidents, the registry.</p></div>
+      <div class="le"><div class="n">LEARNING · 6</div><h3>The loop</h3><p>The risk register, brief-backs, after-action reviews, sampling and drift, 90-day gates, review dates.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="on-dark" style="background:var(--night)">
+  <div class="wrap">
+    <div class="kicker">How to use it</div>
+    <h2 class="lead">The guide finds the gap. <em>The cards close it.</em></h2>
+    <div class="pair">
+      <div class="step"><div class="n">1</div><h3>Fifteen checks</h3><p>The one-page guide asks fifteen questions about the organisation. The "not yet"s name your thinnest section.</p></div>
+      <div class="step"><div class="n">2</div><h3>Pull those cards</h3><p>Each card: why it goes wrong, the move, the line. Every move ends in a named owner, a piece of evidence and a review date.</p></div>
+      <div class="step"><div class="n">3</div><h3>Pin the desk card</h3><p>The whole deck on one A4 — the core five, the test, and default-up. It stays after the cards are memorised.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="download">
+  <div class="wrap">
+    <div class="kicker dark">Downloads</div>
+    <h2 class="lead">Print it yourself. <em>That's the point.</em></h2>
+    <div class="dl">
+      <a href="deck/governance-deck-40-print.html"><span class="what">The deck — 40 cards<span>Print &amp; cut, A4 at 100%, 6 sheets. Cut along the dashed lines.</span></span><span class="fmt">HTML → print</span></a>
+      <a href="deck/governance-desk-card.html"><span class="what">The desk card<span>One A4 pin-up: the core five, the test, and default-up.</span></span><span class="fmt">HTML → print</span></a>
+      <a href="deck/governance-deck-guide.html"><span class="what">The one-page guide<span>Fifteen checks for the organisation. The "not yet"s name your section.</span></span><span class="fmt">HTML → print</span></a>
+      <a href="https://github.com/michael-borck/governance-deck"><span class="what">Everything, in the open<span>Markdown source, print layouts, and the provenance of every card.</span></span><span class="fmt">Repository</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="tag">The tools change. Accountability does not.</span>
+    <span>Free to print and share · not for resale</span>
+    <span>Dr Michael Borck · borck.consulting</span>
+  </div>
+</footer>
+
+</body>
+</html>

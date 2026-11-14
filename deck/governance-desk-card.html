@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Desk card · The Governance Deck</title>
+<style>
+@font-face{font-family:'Domine';src:url('fonts/Domine.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Regular.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Bold.ttf');font-weight:700}
+:root{--night:#0A0C10;--ink:#16181D;--dim:#4B5157;--faint:#8A8E96;--rule:#D8D4CA;--gold:#8A6A1F;--gold2:#E8B54D;
+--serif:'Domine',Georgia,serif;--sans:'Funnel Sans','Avenir Next',sans-serif;--mono:'Nanum Gothic Coding',monospace}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--sans);font-size:10.4pt;line-height:1.48;color:var(--ink);background:#e8e6df}
+@media print{body{background:#fff}}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;margin:6mm auto;box-shadow:0 1mm 4mm rgba(20,20,30,.18)}
+@media print{.page{margin:0;box-shadow:none}}
+.top{background:var(--night);color:#ECE7DB;padding:9mm 12mm 7mm}
+.kicker{font-family:var(--mono);font-size:7.5pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2)}
+.kicker::before{content:"";display:inline-block;width:16pt;height:2pt;background:var(--gold2);margin-right:6pt;vertical-align:middle}
+.top h1{font-family:var(--serif);font-size:21pt;margin-top:4pt}
+.top h1 em{font-style:normal;color:var(--gold2)}
+.top p{margin:3pt 0 0;color:rgba(236,231,219,.75);font-size:9.5pt}
+.grid{flex:1;display:flex;flex-wrap:wrap;padding:6mm 10mm 0;gap:5mm 5mm;align-content:flex-start}
+.panel{width:calc(50% - 2.5mm);border-top:2.5pt solid var(--acc);padding-top:4pt}
+.panel.wide{width:100%}
+.panel h2{font-weight:700;margin:2pt 0 4pt;font-size:13pt;display:flex;align-items:baseline;gap:6pt}
+.panel h2 span{font-family:var(--mono);font-size:7.5pt;letter-spacing:.14em;color:var(--acc);font-weight:700}
+.panel .q{font-family:var(--serif);font-size:10pt;color:var(--dim);margin-bottom:4pt}
+.panel h3{font-size:8pt;margin:4pt 0 2pt;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--acc);font-weight:700}
+.panel p{margin:0 0 3pt}
+.panel.wide .cols{display:flex;gap:6mm}
+.panel.wide .cols>div{flex:1}
+.line{--acc:#8A6A1F}.ov{--acc:#232867}.da{--acc:#1F8A70}.ve{--acc:#4E5D6B}.le{--acc:#C4503A}
+.bottom{display:flex;gap:6mm;padding:4mm 10mm 6mm;border-top:.6pt solid var(--rule);margin:4mm 10mm 0}
+.bottom>div{flex:1}
+.bottom h3{font-family:var(--mono);font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 2pt;font-weight:700}
+.bottom p{font-size:9.2pt;line-height:1.4}
+.foot{padding:2mm 10mm 6mm;display:flex;justify-content:space-between;font-family:var(--mono);font-size:7pt;letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <div class="kicker">The Governance Deck · Desk card</div>
+    <h1>The tools change. <em>Accountability does not.</em></h1>
+    <p>The whole deck for executives and boards. Pin it up; use it before you approve, paste or escalate.</p>
+  </div>
+
+  <div class="grid">
+    <div class="panel line">
+      <h2><span>01</span>The Line</h2>
+      <div class="q">Accountability and the gate.</div>
+      <p><b>The principle:</b> every AI-assisted decision has a named human who owns the evidence and the consequence · <b>The four questions:</b> what does it do, what does it see, who checks it, what if wrong · <b>The unpromptable:</b> real-time context, calls against the data, unlistable variables · <b>The gate:</b> a blank field is a no.</p>
+    </div>
+
+    <div class="panel ov">
+      <h2><span>02</span>Oversight</h2>
+      <div class="q">Human authority and its evidence.</div>
+      <p><b>Tiers 1–4:</b> autonomous (bounded) · on the loop (veto) · in the loop (decides on primary evidence) · in command (no AI origination) · <b>Start at Tier 3</b>; down is earned, up is default · one high on consequence, reversibility or time escalates · <b>Evidence by tier</b> or the tier is not claimed · <b>Red lines</b> written, owned, published, reviewed annually · <b>Decision rights:</b> one name per row · two-person rule where stakes demand.</p>
+    </div>
+
+    <div class="panel da">
+      <h2><span>03</span>Data</h2>
+      <div class="q">Classification, sovereignty, the paste.</div>
+      <p><b>Four classes:</b> Very High (sovereign or none) · High (approved tenant, redact) · Medium (enterprise, no training) · Low (any approved tool) · <b>Default:</b> cannot classify, cannot paste; mixed takes the highest class · <b>Paste test:</b> class and marker · where it runs · who sees it · kept or used · metadata · <b>Sovereignty:</b> who can compel access, not just where it sits · <b>Sandbox:</b> a ban is not a control; it is a hope.</p>
+    </div>
+
+    <div class="panel ve">
+      <h2><span>04</span>Vendors</h2>
+      <div class="q">Diligence before and after the signature.</div>
+      <p><b>Ten questions before the demo</b> — training data, retention and deletion, sub-processors, human review, incidents, model change, audit rights, exit · <b>TEVV:</b> evidence, not badges · <b>Model swap:</b> notice, re-validation, or the vendor owns your operating model · <b>Exit signed with the entry</b> · <b>Registry:</b> where it runs, which model, last review.</p>
+    </div>
+
+    <div class="panel le wide">
+      <h2><span>05</span>Learning</h2>
+      <div class="q">Registers, reviews, the loop.</div>
+      <div class="cols">
+        <div><p><b>One register:</b> AI risks join the register you already run — one owner each · <b>Brief-back</b> before every go-live: listen for gaps, not polish · <b>AAR monthly,</b> blameless, near misses first.</p></div>
+        <div><p><b>Sampling and drift:</b> trust decays on a schedule; sample against it · <b>Gates at 30, 60, 90</b> — or the plan is a poster · <b>Review dates are controls:</b> every artefact carries one, and missed reviews surface by name.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div><h3>The core five</h3><p>The four questions · the 4-tier spectrum · red lines · the paste test · the accountability test. If you keep only five tools, keep these.</p></div>
+    <div><h3>The test</h3><p>Every tool and artefact must produce a named owner, a piece of evidence and a review date. If not, it is decoration.</p></div>
+    <div><h3>Default up</h3><p>Start at Tier 3. Move down only with evidence. Move up whenever uncertain. One high on the escalation test is enough.</p></div>
+  </div>
+  <div class="foot"><span>The tools change. Accountability does not.</span><span>Free to print and share · not for resale · not a sales document</span></div>
+</div>
+</body>
+</html>

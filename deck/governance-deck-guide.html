@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>The one-page guide · The Governance Deck</title>
+<style>
+@font-face{font-family:'Domine';src:url('fonts/Domine.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Regular.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Bold.ttf');font-weight:700}
+:root{--night:#0A0C10;--ink:#16181D;--dim:#4B5157;--faint:#8A8E96;--rule:#D8D4CA;--gold:#8A6A1F;--gold2:#E8B54D;
+--serif:'Domine',Georgia,serif;--sans:'Funnel Sans','Avenir Next',sans-serif;--mono:'Nanum Gothic Coding',monospace}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--sans);font-size:10.3pt;line-height:1.5;color:var(--ink);background:#e8e6df}
+@media print{body{background:#fff}}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;margin:6mm auto;box-shadow:0 1mm 4mm rgba(20,20,30,.18)}
+@media print{.page{margin:0;box-shadow:none}}
+.top{background:var(--night);color:#ECE7DB;padding:8mm 12mm 6mm}
+.kicker{font-family:var(--mono);font-size:7.5pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2)}
+.kicker::before{content:"";display:inline-block;width:16pt;height:2pt;background:var(--gold2);margin-right:6pt;vertical-align:middle}
+.top h1{font-family:var(--serif);font-size:20pt;margin-top:4pt}
+.top h1 em{font-style:normal;color:var(--gold2)}
+.top p{margin:3pt 0 0;color:rgba(236,231,219,.75);font-size:9.5pt}
+.top p b{color:#ECE7DB}
+.grid{flex:1;display:flex;flex-wrap:wrap;padding:7mm 10mm 0;gap:7mm 6mm;align-content:flex-start}
+.sec{width:calc(50% - 3mm);border-top:2.5pt solid var(--acc);padding-top:3.5pt}
+.sec h2{font-weight:700;font-size:14pt;margin:1pt 0 1pt;display:flex;align-items:baseline;gap:6pt}
+.sec h2 span{font-family:var(--mono);font-size:7.5pt;letter-spacing:.14em;color:var(--acc);font-weight:700}
+.sec .q{font-family:var(--serif);font-size:10.5pt;color:var(--dim);margin-bottom:3pt}
+.chk{display:flex;align-items:baseline;gap:3pt;padding:3pt 0;border-bottom:.5pt dotted var(--rule);font-size:9.3pt;line-height:1.38}
+.box{flex:none;display:inline-block;width:7pt;height:7pt;border:1pt solid #9a978c;border-radius:1.5pt;transform:translateY(0.8pt)}
+.lbl{flex:none;font-family:var(--mono);font-size:6.2pt;letter-spacing:.06em;color:var(--faint)}
+.lbl.y{color:var(--acc)}
+.start{font-family:var(--mono);font-size:7pt;letter-spacing:.08em;color:var(--acc);font-weight:700;margin-top:3pt;text-transform:uppercase}
+.bottom{display:flex;gap:5mm;padding:0 10mm 5mm}
+.wide{flex:1.35;border-top:2.5pt solid #8A6A1F;padding-top:3.5pt}
+.close{flex:1;background:#F4F2EC;border:.6pt solid var(--rule);border-radius:2mm;padding:4mm}
+.close h3{font-family:var(--mono);font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 2pt;font-weight:700}
+.close p{font-size:9.5pt;line-height:1.42}
+.wline{border-bottom:1pt solid #9a978c;height:7mm;margin:3pt 0 4pt}
+.foot{padding:2mm 10mm 6mm;display:flex;justify-content:space-between;font-family:var(--mono);font-size:7pt;letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
+.line{--acc:#8A6A1F}.ov{--acc:#232867}.da{--acc:#1F8A70}.ve{--acc:#4E5D6B}.le{--acc:#C4503A}.p{--acc:#8A6A1F}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <div class="kicker">The Governance Deck · The one-page guide</div>
+    <h1>Find your thinnest <em>section.</em></h1>
+    <p>Answer for <b>the organisation</b>, not for yourself. Fifteen checks, pen in hand. The test underneath every one: does it produce a named owner, a piece of evidence and a review date?</p>
+  </div>
+
+  <div class="grid">
+    <div class="sec line">
+      <h2><span>01 · THE LINE</span>Accountability</h2>
+      <div class="q">Accountability and the gate.</div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Every AI-assisted decision in our priority workflows has a named owner who holds the evidence.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>We can answer the four questions — does, sees, who checks, what if wrong — for every approved tool.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>The decisions AI may never make are written down, owned, and published internally.</span></div>
+      <div class="start">Not yet? Work section 01 — cards 01–08</div>
+    </div>
+
+    <div class="sec ov">
+      <h2><span>02 · OVERSIGHT</span>Authority</h2>
+      <div class="q">Human authority and its evidence.</div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Every live use case carries a tier from 1 to 4, and we can produce the evidence that tier requires.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Consequential work starts at Tier 3, and any single high on consequence, reversibility or time pressure escalates it.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Our decision-rights matrix has one accountable name per row, including exceptions.</span></div>
+      <div class="start">Not yet? Work section 02 — cards 09–18</div>
+    </div>
+
+    <div class="sec da">
+      <h2><span>03 · DATA</span>Classification</h2>
+      <div class="q">Classification, sovereignty, the paste.</div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Staff can classify a document before pasting it, and mixed documents take the highest class present.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>We know where each vendor processes our data, and who can lawfully compel access to it.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>There is a short approved-tool list, a safe alternative for every legitimate need, and a named place to ask.</span></div>
+      <div class="start">Not yet? Work section 03 — cards 19–26</div>
+    </div>
+
+    <div class="sec ve">
+      <h2><span>04 · VENDORS</span>Diligence</h2>
+      <div class="q">Diligence before and after the signature.</div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>The diligence questions were answered in writing before the demo — and the exit terms were signed with the entry.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Retention, deletion and training opt-out are contractual, not sales claims.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>The registry records where each tool runs, which model version is live, and when each was last reviewed.</span></div>
+      <div class="start">Not yet? Work section 04 — cards 27–34</div>
+    </div>
+
+    <div class="sec le" style="width:calc(50% - 3mm)">
+      <h2><span>05 · LEARNING</span>The loop</h2>
+      <div class="q">Registers, reviews, the loop.</div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>AI risks sit in our existing risk register, each with one accountable owner.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Every go-live has had a brief-back, and after-action reviews run monthly including near misses.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>Every tier, red line and exception carries a review date that is actually kept.</span></div>
+      <div class="start">Not yet? Work section 05 — cards 35–40</div>
+    </div>
+
+    <div class="close">
+      <h3>Your thinnest section</h3>
+      <p>Whichever section had the most "not yet" is where the organisation is leaning on luck and goodwill.</p>
+      <div class="wline"></div>
+      <p>Work that section first. Then hold every answer to the test: owner, evidence, review date.</p>
+    </div>
+  </div>
+
+  <div class="foot"><span>The tools change. Accountability does not.</span><span>Free to print and share · not for resale · not a sales document</span></div>
+</div>
+</body>
+</html>
