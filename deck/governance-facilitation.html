@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Run it as a session · The Governance Deck</title>
+<style>
+@font-face{font-family:'Domine';src:url('fonts/Domine.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Regular.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Bold.ttf');font-weight:700}
+:root{--night:#0A0C10;--ink:#16181D;--dim:#4B5157;--faint:#8A8E96;--rule:#D8D4CA;--gold:#8A6A1F;--gold2:#E8B54D;
+--serif:'Domine',Georgia,serif;--sans:'Funnel Sans','Avenir Next',sans-serif;--mono:'Nanum Gothic Coding',monospace}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--sans);font-size:10.4pt;line-height:1.5;color:var(--ink);background:#e8e6df}
+@media print{body{background:#fff}}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;margin:6mm auto;box-shadow:0 1mm 4mm rgba(20,20,30,.18)}
+@media print{.page{margin:0;box-shadow:none}}
+.top{background:var(--night);color:#ECE7DB;padding:8mm 12mm 6mm}
+.kicker{font-family:var(--mono);font-size:7.5pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2)}
+.kicker::before{content:"";display:inline-block;width:16pt;height:2pt;background:var(--gold2);margin-right:6pt;vertical-align:middle}
+.top h1{font-family:var(--serif);font-size:20pt;margin-top:4pt}
+.top h1 em{font-style:normal;color:var(--gold2)}
+.top p{margin:3pt 0 0;color:rgba(236,231,219,.75);font-size:9.5pt}
+.top p b{color:#ECE7DB}
+.need{margin:5mm 12mm 0;padding:4mm 5mm;background:#F4F2EC;border-left:2pt solid var(--gold2);border-radius:1mm}
+.need h3{font-family:var(--mono);font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 2pt;font-weight:700}
+.need p{font-size:9.4pt;margin:0}
+.sheet{flex:1;padding:5mm 12mm 0}
+.run{width:100%;border-collapse:collapse}
+.run th{font-family:var(--mono);font-size:7pt;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);text-align:left;padding:2.5mm 3mm 2mm;border-bottom:1.4pt solid var(--ink)}
+.run td{padding:2.8mm 3mm;border-bottom:.5pt dotted var(--rule);font-size:9.3pt;line-height:1.42;vertical-align:top}
+.run td.t{font-family:var(--mono);font-weight:700;font-size:8.5pt;color:var(--dim);white-space:nowrap;width:16mm}
+.run td b{font-weight:700}
+.debrief{margin:5mm 12mm 0;display:flex;gap:5mm}
+.debrief>div{flex:1;background:#F4F2EC;border:.6pt solid var(--rule);border-radius:2mm;padding:3.5mm}
+.debrief h3{font-family:var(--mono);font-size:7.2pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 2pt;font-weight:700}
+.debrief p{font-size:9.2pt;line-height:1.42;margin:0 0 2pt}
+.foot{padding:3mm 12mm 6mm;display:flex;justify-content:space-between;font-family:var(--mono);font-size:7pt;letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <div class="kicker">The Governance Deck · Facilitation</div>
+    <h1>Run it as a <em>sixty-minute session.</em></h1>
+    <p>For an executive or board meeting. Four to ten people around one table, dealing the sections as agendas. The session ends in names and dates, or it has not happened.</p>
+  </div>
+
+  <div class="need">
+    <h3>What you need on the table</h3>
+    <p>The one-page guide, printed per person · the deck, sorted by section · the live use-case list, however rough · one sheet for the decisions · a visible timer. Reports circulate beforehand; the session is not a read-through.</p>
+  </div>
+
+  <div class="sheet">
+    <table class="run">
+      <tr><th style="width:16mm">Time</th><th>Move</th></tr>
+      <tr><td class="t">0:00</td><td><b>Frame it.</b> Two minutes: this session produces owner, evidence and review date, or it produces nothing. Decisions are made here, not presented here. The test for everything agreed today is on the desk card.</td></tr>
+      <tr><td class="t">0:05</td><td><b>Run the fifteen checks.</b> Silently, individually, eight minutes. Compare counts only: which of the five sections is thinnest for the organisation. Disagreement about counts is itself the first finding.</td></tr>
+      <tr><td class="t">0:15</td><td><b>Place the live use cases on the tiers.</b> Take the real list. For each: Tier 1, 2, 3 or 4 — out loud, fast, first instincts. Then ask the evidence question for each claim: <b>where is the override rate, the sign-off record, the two-person log?</b> A tier with no evidence drops back to Tier 3 on the spot.</td></tr>
+      <tr><td class="t">0:28</td><td><b>Argue one red line.</b> Take the decision in the room most likely to be automated by accident — the one with deadline pressure. Draft its red line live: decision, boundary, owner, verification rule, record, review date. Defend it to the client, the regulator and the staff, in that order. Then assign the same drafting to the next two, with owners and dates.</td></tr>
+      <tr><td class="t">0:42</td><td><b>Close the vendor gap.</b> Ten questions, quickly, for the tool most in use. Any answer that is vague or verbal becomes a written ask to the vendor, with a date — before renewal, not after.</td></tr>
+      <tr><td class="t">0:50</td><td><b>Name the decisions AI may never make.</b> Round the table, one each, no repeats. This list, rough as it is, becomes the red line inventory's first page and the board's next paper.</td></tr>
+      <tr><td class="t">0:56</td><td><b>Review dates before adjourning.</b> Every decision made today gets its review date in the calendar before anyone stands up. An unbooked review is a decision quietly revoked.</td></tr>
+    </table>
+  </div>
+
+  <div class="debrief">
+    <div><h3>If the room negotiates oversight down</h3><p>Ask for the evidence that would justify the lower tier. If it does not exist, the tier goes up and the evidence becomes the action. The burden sits with the move down.</p></div>
+    <div><h3>If everything is "Tier 3 for now"</h3><p>"For now" without a review date is Tier 3 forever. Write the date, or write the tier properly.</p></div>
+    <div><h3>The one rule</h3><p>Nothing leaves the room as "the committee will look at it". One name per row, or the row stays open on the record.</p></div>
+  </div>
+  <div class="foot"><span>The tools change. Accountability does not.</span><span>Free to print and share · not for resale · not a sales document</span></div>
+</div>
+</body>
+</html>
