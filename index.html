@@ -24,6 +24,8 @@ h1,h2,h3{font-family:var(--serif);line-height:1.15}
 .hero{position:relative;background:var(--night);color:#ECE7DB;overflow:hidden}
 .hero::after{content:"";position:absolute;inset:0;background:
   repeating-linear-gradient(90deg,rgba(232,181,77,.03) 0 1px,transparent 1px 60px)}
+.hero .bg{position:absolute;inset:0;background:url('assets/art/banner.png') center/cover;opacity:.5}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,11,14,.96) 0%,rgba(10,11,14,.66) 48%,rgba(10,11,14,.2) 100%)}
 .hero .wrap{position:relative;z-index:1;padding:110px 24px 120px;max-width:1060px}
 .hero h1{font-size:clamp(30px,4.6vw,46px);margin:14px 0 0;color:#fff}
 .hero h1 em{font-style:normal;color:var(--gold)}
@@ -54,6 +56,12 @@ section.alt{background:var(--paper)}
 .step p{font-size:13.5px;color:#4B5157}
 .on-dark .step h3{color:#ECE7DB}
 .on-dark .step p{color:#a9a9b4}
+.split{display:grid;grid-template-columns:minmax(240px,380px) 1fr;gap:48px;align-items:center;margin-top:44px}
+.split img{width:100%;border-radius:10px;display:block;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.split h3{font-size:19px;margin:0 0 10px}
+.split p{font-size:14.5px;color:#3B3F46;margin:0 0 12px}
+.split .facts{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;color:var(--faint);line-height:2;text-transform:uppercase}
+@media(max-width:800px){.split{grid-template-columns:1fr}}
 .dl{margin-top:40px;border:1px solid #D8D4CA;border-radius:10px;overflow:hidden}
 .on-dark .dl{border-color:rgba(236,231,219,.18)}
 .dl a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 22px;text-decoration:none;color:var(--ink);border-bottom:1px solid #E4E1D8}
@@ -73,6 +81,7 @@ footer .tag{color:var(--gold)}
 <body>
 
 <div class="hero on-dark">
+  <div class="bg"></div>
   <div class="wrap">
     <div class="kicker">A free deck of named owners</div>
     <h1>Approving and overseeing AI.<br><em>Owner, evidence, review date.</em></h1>
@@ -107,6 +116,22 @@ footer .tag{color:var(--gold)}
       <div class="step"><div class="n">1</div><h3>Fifteen checks</h3><p>The one-page guide asks fifteen questions about the organisation. The "not yet"s name your thinnest section.</p></div>
       <div class="step"><div class="n">2</div><h3>Pull those cards</h3><p>Each card: why it goes wrong, the move, the line. Every move ends in a named owner, a piece of evidence and a review date.</p></div>
       <div class="step"><div class="n">3</div><h3>Pin the desk card</h3><p>The whole deck on one A4 — the core five, the test, and default-up. It stays after the cards are memorised.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker dark">The printed deck</div>
+    <h2 class="lead">Also a boxed deck <em>for the boardroom.</em></h2>
+    <div class="split">
+      <img src="assets/art/cover.png" alt="The Governance Deck box art: a dark boardroom table under a brass lamp">
+      <div>
+        <h3>Built for the executive table</h3>
+        <p>The deck runs as a governance working session: deal the sections across the table, place your live use cases on the tiers, argue the red lines until they are written, and leave with names and dates against each one.</p>
+        <p>Card faces stay typographic on purpose. Art lives on the box, the back and the wall — the accountability stays yours.</p>
+        <div class="facts">40 cards · 5 sections · 93×67 mm<br>Domine · Funnel Sans · Nanum Gothic Coding<br>Free to print and share · not for resale</div>
+      </div>
     </div>
   </div>
 </section>

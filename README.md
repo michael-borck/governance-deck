@@ -24,12 +24,15 @@ NDA note: generic frameworks only. No ERS-tailored material. See
 |---|---|
 | `governance-deck-40-cards.md` | The deck, markdown. |
 | `governance-deck-40-print.html` | Print & cut. 6 A4 pages, 8 cards per sheet, cover card first. |
+| `governance-deck-40-art.html` | Art edition for the boxed print run: portrait cards, 6 per A4, category vignette tinted per colour on every face. |
 | `governance-deck-guide.html` | One-page diagnostic: fifteen checks for the organisation. |
 | `governance-desk-card.html` | One A4 pin-up: the core five, the test, default-up. |
 | `fonts/` | Domine, Funnel Sans, Nanum Gothic Coding (SIL OFL). |
 
-Art identity pass (cover, back, banner, vignettes — night-and-gold boardroom
-world) is the remaining pass, as for the other decks.
+Art: `assets/art/` holds the boardroom-chiaroscuro identity — cover, back,
+banner and five category vignettes, generated with limn (SwarmUI,
+juggernautXL_v9). Prompts and the locked style prefix are in
+`assets/art/README.md` and the `.png.json` sidecars.
 
 ## Print setup
 
