@@ -1,5 +1,9 @@
 # The Governance Deck
 
+<p align="center">
+  <img src="assets/art/banner.png" alt="The Governance Deck" width="720">
+</p>
+
 Forty cards for executives and boards approving and overseeing AI, distilled
 from the generic frameworks of the Leading AI with Confidence course. Free
 product: no gate, no capture.
